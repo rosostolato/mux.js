@@ -1,5 +1,7 @@
 'use strict';
 
+var segments = require('create-test-data!segments');
+
 var
   captionStream,
   m2ts = require('../lib/m2ts'),
@@ -9,9 +11,9 @@ var
   makeSeiFromCaptionPacket = seiNalUnitGenerator.makeSeiFromCaptionPacket,
   makeSeiFromMultipleCaptionPackets = seiNalUnitGenerator.makeSeiFromMultipleCaptionPackets,
   characters = seiNalUnitGenerator.characters,
-  sintelCaptions = require('./utils/sintel-captions'),
-  mixed608708Captions = require('./utils/mixed-608-708-captions'),
-  multiChannel608Captions = require('./utils/multi-channel-608-captions');
+  sintelCaptions = segments['sintel-captions.ts'](),
+  mixed608708Captions = require('./utils/mixed-608-708-captions.js'),
+  multiChannel608Captions = segments['multi-channel-608-captions.ts']();
 
 QUnit.module('Caption Stream', {
   beforeEach: function() {
