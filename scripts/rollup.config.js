@@ -16,9 +16,9 @@ const shared = {
     return defaults;
   }
 };
-const mainBuilds = generate(Object.assign({input: 'lib/index.js', distName: 'mux'}, shared)).builds;
-const mp4Builds = generate({input: 'lib/mp4/index.js', distName: 'mux-mp4'}).builds;
-const flvBuilds = generate({input: 'lib/flv/index.js', distName: 'mux-flv'}).builds;
+const mainBuilds = generate(Object.assign({input: 'lib/index.js', distName: 'mux', exportName: 'muxjs'}, shared)).builds;
+const mp4Builds = generate({input: 'lib/mp4/index.js', distName: 'mux-mp4', exportName: 'muxjs'}).builds;
+const flvBuilds = generate({input: 'lib/flv/index.js', distName: 'mux-flv', exportName: 'muxjs'}).builds;
 
 const allBuilds = [];
 
