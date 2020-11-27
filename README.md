@@ -1,3 +1,9 @@
+FYI: this is a fork from https://github.com/videojs/mux.js/
+
+It's just a port to use es6 classes with typings
+
+---
+
 # mux.js
 [![Build Status](https://travis-ci.org/videojs/mux.js.svg?branch=main)](https://travis-ci.org/videojs/mux.js)[![Greenkeeper badge](https://badges.greenkeeper.io/videojs/mux.js.svg)](https://greenkeeper.io/)
 [![Slack Status](http://slack.videojs.com/badge.svg)](http://slack.videojs.com)
@@ -6,8 +12,6 @@
 Lightweight utilities for inspecting and manipulating video container formats.
 
 Maintenance Status: Stable
-
-This is a port to es6 classes
 
 ## Table of Contents
 
