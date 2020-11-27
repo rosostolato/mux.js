@@ -7,6 +7,8 @@ Lightweight utilities for inspecting and manipulating video container formats.
 
 Maintenance Status: Stable
 
+This is a port to es6 classes
+
 ## Table of Contents
 
 - [Installation](#installation)
